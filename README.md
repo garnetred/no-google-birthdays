@@ -4,7 +4,7 @@
 
 ## Abstract
 
-This browser extension hides the balloon animation that appears on top of the user profile avatar on Google domains.
+This browser extension hides the balloon animation that appears on top of the user profile avatar on Google domains, as well as the popup window that would normally appear when the profile avatar is clicked. This is the only way to hide the birthday balloon animation that appears in the popup window.
 
 ## Tech Stack
 
