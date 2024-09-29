@@ -1,3 +1,7 @@
-img[src=*birthday] {
-  display: none;
+img[src*="birthday"] {
+  display: none !important;
+}
+
+iframe[name="account"] {
+  display: none !important;
 }
