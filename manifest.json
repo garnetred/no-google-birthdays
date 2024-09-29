@@ -1,38 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "Hide LinkedIn Profile Stats",
-  "version": "0.0.5",
-  "description": "Hide LinkedIn statistics related to page views and post impressions",
+  "name": "No Google Birthdays",
+  "version": "0.0.1",
+  "description": "This extension hides birthday animations for Google profiles on Google domains.",
    "permissions": ["scripting"],
   "icons": {
-    "16": "images/chart-emoji-16.png",
-    "32": "images/chart-emoji-32.png",
-    "48": "images/chart-emoji-48.png",
-    "128": "images/chart-emoji-128.png"
+    "16": "images/balloon-emoji-16.png",
+    "32": "images/balloon-emoji-32.png",
+    "48": "images/balloon-emoji-48.png",
+    "128": "images/balloon-emoji-128.png"
 },
 "background": {
-    "service_worker": "scripts/background.js"
 },
 "web_accessible_resources": [
   {
     "resources": ["css/*.css"],
-    "extension_ids": [
-      "ohaihfklecnjkblemcilnofjgnfpcnkl"
-    ]
+    "matches": ["*://*.google.com/*"]
     }
   ],
 "content_scripts": [
     {
         "matches": [
-        "*://www.linkedin.com/feed/*",
-        "*://www.linkedin.com/in/*"
+        "*://*.google.com/*"
       ],
       "css": ["css/global.css"]
     }
 ],
   "host_permissions": [
-    "*://www.linkedin.com/feed/*",
-    "*://www.linkedin.com/in/*"
+    "*://*.google.com/*"
   ],
   "action": {
       "default_popup": "popup.html"

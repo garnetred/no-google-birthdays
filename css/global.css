@@ -1,3 +1,15 @@
-img[src=*birthday] {
-  display: none;
+img[src*="birthday"] {
+  display: none !important;
 }
+
+/* div[data-anim-path*="birthday"] {
+  display: none !important;
+} */
+
+[data-anim-path] > svg{
+  display: none !important;
+}
+
+/* div[data-anim-name^="Birthday"] {
+  display: none !important;
+} */
